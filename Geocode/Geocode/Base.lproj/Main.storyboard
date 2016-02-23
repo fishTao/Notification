@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="a6S-Kt-Zlc">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QJD-aD-O6z">
+                                <rect key="frame" x="36" y="104" width="60" height="30"/>
+                                <state key="normal" title="地理编码"/>
+                                <connections>
+                                    <segue destination="PYt-m3-gXD" kind="push" id="QTj-7R-1vz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vmn-7y-KlS">
+                                <rect key="frame" x="14" y="166" width="105" height="30"/>
+                                <state key="normal" title="地理位置反编码"/>
+                                <connections>
+                                    <segue destination="EIO-hV-7Sq" kind="push" id="ZIs-5c-FsI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="k65-H4-Dcs"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1156" y="274"/>
+        </scene>
+        <!--Regeocode View Controller-->
+        <scene sceneID="M1J-gf-Q1G">
+            <objects>
+                <viewController id="EIO-hV-7Sq" customClass="RegeocodeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zIp-yF-TVn"/>
+                        <viewControllerLayoutGuide type="bottom" id="370-TG-wVF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pwZ-Nk-wuv">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="It3-aT-FWr">
+                                <rect key="frame" x="40" y="84" width="520" height="496"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="It3-aT-FWr" firstAttribute="top" secondItem="zIp-yF-TVn" secondAttribute="bottom" constant="20" id="BK3-Ki-K9i"/>
+                            <constraint firstItem="370-TG-wVF" firstAttribute="top" secondItem="It3-aT-FWr" secondAttribute="bottom" constant="20" id="CW7-H0-Nmq"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="It3-aT-FWr" secondAttribute="trailing" constant="20" id="cty-zM-VWi"/>
+                            <constraint firstItem="It3-aT-FWr" firstAttribute="leading" secondItem="pwZ-Nk-wuv" secondAttribute="leadingMargin" constant="20" id="fY7-Kt-OPU"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="PMn-ra-E2J"/>
+                    <connections>
+                        <outlet property="mapview" destination="It3-aT-FWr" id="oxi-h7-Quf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="udr-RC-KKM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1871" y="748"/>
+        </scene>
+        <!--地理位置编码-->
+        <scene sceneID="fCD-Ma-Zdp">
+            <objects>
+                <viewController id="PYt-m3-gXD" customClass="GeocodeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4bV-Rv-PfZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="U3o-ru-y5w"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Frx-rE-DWM">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mnb-ZT-Xea">
+                                <rect key="frame" x="20" y="72" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="i7n-i9-lM8">
+                                <rect key="frame" x="20" y="122" width="560" height="458"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="i7n-i9-lM8" firstAttribute="top" secondItem="Mnb-ZT-Xea" secondAttribute="bottom" constant="20" id="26h-Kl-9dW"/>
+                            <constraint firstAttribute="trailing" secondItem="i7n-i9-lM8" secondAttribute="trailing" constant="20" id="CdN-Hz-C87"/>
+                            <constraint firstItem="U3o-ru-y5w" firstAttribute="top" secondItem="i7n-i9-lM8" secondAttribute="bottom" constant="20" id="GJU-Fk-v4N"/>
+                            <constraint firstAttribute="trailing" secondItem="Mnb-ZT-Xea" secondAttribute="trailing" constant="20" id="HkX-JU-29X"/>
+                            <constraint firstItem="Mnb-ZT-Xea" firstAttribute="leading" secondItem="Frx-rE-DWM" secondAttribute="leading" constant="20" id="MLb-Cw-lBL"/>
+                            <constraint firstItem="i7n-i9-lM8" firstAttribute="leading" secondItem="Frx-rE-DWM" secondAttribute="leading" constant="20" id="cMK-Fg-0ty"/>
+                            <constraint firstItem="Mnb-ZT-Xea" firstAttribute="top" secondItem="4bV-Rv-PfZ" secondAttribute="bottom" constant="8" id="ef5-Hl-YmT"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="地理位置编码" id="9WJ-ng-ztq"/>
+                    <connections>
+                        <outlet property="mapView" destination="i7n-i9-lM8" id="bRU-dZ-jhA"/>
+                        <outlet property="textFild" destination="Mnb-ZT-Xea" id="PMR-nt-Hqp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1vu-cd-vpL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1812" y="80"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="v1k-Gg-h3V">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="a6S-Kt-Zlc" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="sMT-Y8-ub5">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="d9q-Bw-d4H"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lxj-qB-D3D" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="349" y="264"/>
+        </scene>
+    </scenes>
+</document>

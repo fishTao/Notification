@@ -1,0 +1,539 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CCCF818E1C77FE6500B604C9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CCCF818D1C77FE6500B604C9 /* main.m */; };
+		CCCF81911C77FE6500B604C9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CCCF81901C77FE6500B604C9 /* AppDelegate.m */; };
+		CCCF81941C77FE6500B604C9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCCF81931C77FE6500B604C9 /* ViewController.m */; };
+		CCCF81971C77FE6500B604C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCCF81951C77FE6500B604C9 /* Main.storyboard */; };
+		CCCF81991C77FE6500B604C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCCF81981C77FE6500B604C9 /* Assets.xcassets */; };
+		CCCF819C1C77FE6500B604C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCCF819A1C77FE6500B604C9 /* LaunchScreen.storyboard */; };
+		CCCF81A71C77FE6500B604C9 /* GeocodeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CCCF81A61C77FE6500B604C9 /* GeocodeTests.m */; };
+		CCCF81B21C77FE6500B604C9 /* GeocodeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CCCF81B11C77FE6500B604C9 /* GeocodeUITests.m */; };
+		CCCF81C11C77FF8A00B604C9 /* GeocodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCCF81C01C77FF8A00B604C9 /* GeocodeViewController.m */; };
+		CCCF81C31C77FFBC00B604C9 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCCF81C21C77FFBC00B604C9 /* MapKit.framework */; };
+		CCCF81C51C77FFCA00B604C9 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCCF81C41C77FFCA00B604C9 /* CoreLocation.framework */; };
+		CCCF81C81C780A4100B604C9 /* RegeocodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCCF81C71C780A4100B604C9 /* RegeocodeViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CCCF81A31C77FE6500B604C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CCCF81811C77FE6500B604C9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CCCF81881C77FE6500B604C9;
+			remoteInfo = Geocode;
+		};
+		CCCF81AE1C77FE6500B604C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CCCF81811C77FE6500B604C9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CCCF81881C77FE6500B604C9;
+			remoteInfo = Geocode;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CCCF81891C77FE6500B604C9 /* Geocode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Geocode.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCCF818D1C77FE6500B604C9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CCCF818F1C77FE6500B604C9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CCCF81901C77FE6500B604C9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CCCF81921C77FE6500B604C9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CCCF81931C77FE6500B604C9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CCCF81961C77FE6500B604C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CCCF81981C77FE6500B604C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CCCF819B1C77FE6500B604C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CCCF819D1C77FE6500B604C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCCF81A21C77FE6500B604C9 /* GeocodeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeocodeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCCF81A61C77FE6500B604C9 /* GeocodeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GeocodeTests.m; sourceTree = "<group>"; };
+		CCCF81A81C77FE6500B604C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCCF81AD1C77FE6500B604C9 /* GeocodeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeocodeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCCF81B11C77FE6500B604C9 /* GeocodeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GeocodeUITests.m; sourceTree = "<group>"; };
+		CCCF81B31C77FE6500B604C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCCF81BF1C77FF8A00B604C9 /* GeocodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeocodeViewController.h; sourceTree = "<group>"; };
+		CCCF81C01C77FF8A00B604C9 /* GeocodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeocodeViewController.m; sourceTree = "<group>"; };
+		CCCF81C21C77FFBC00B604C9 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		CCCF81C41C77FFCA00B604C9 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		CCCF81C61C780A4100B604C9 /* RegeocodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegeocodeViewController.h; sourceTree = "<group>"; };
+		CCCF81C71C780A4100B604C9 /* RegeocodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegeocodeViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CCCF81861C77FE6500B604C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCCF81C51C77FFCA00B604C9 /* CoreLocation.framework in Frameworks */,
+				CCCF81C31C77FFBC00B604C9 /* MapKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCCF819F1C77FE6500B604C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCCF81AA1C77FE6500B604C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CCCF81801C77FE6500B604C9 = {
+			isa = PBXGroup;
+			children = (
+				CCCF81C41C77FFCA00B604C9 /* CoreLocation.framework */,
+				CCCF81C21C77FFBC00B604C9 /* MapKit.framework */,
+				CCCF818B1C77FE6500B604C9 /* Geocode */,
+				CCCF81A51C77FE6500B604C9 /* GeocodeTests */,
+				CCCF81B01C77FE6500B604C9 /* GeocodeUITests */,
+				CCCF818A1C77FE6500B604C9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CCCF818A1C77FE6500B604C9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CCCF81891C77FE6500B604C9 /* Geocode.app */,
+				CCCF81A21C77FE6500B604C9 /* GeocodeTests.xctest */,
+				CCCF81AD1C77FE6500B604C9 /* GeocodeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CCCF818B1C77FE6500B604C9 /* Geocode */ = {
+			isa = PBXGroup;
+			children = (
+				CCCF818F1C77FE6500B604C9 /* AppDelegate.h */,
+				CCCF81901C77FE6500B604C9 /* AppDelegate.m */,
+				CCCF81921C77FE6500B604C9 /* ViewController.h */,
+				CCCF81931C77FE6500B604C9 /* ViewController.m */,
+				CCCF81951C77FE6500B604C9 /* Main.storyboard */,
+				CCCF81981C77FE6500B604C9 /* Assets.xcassets */,
+				CCCF819A1C77FE6500B604C9 /* LaunchScreen.storyboard */,
+				CCCF819D1C77FE6500B604C9 /* Info.plist */,
+				CCCF818C1C77FE6500B604C9 /* Supporting Files */,
+				CCCF81BF1C77FF8A00B604C9 /* GeocodeViewController.h */,
+				CCCF81C01C77FF8A00B604C9 /* GeocodeViewController.m */,
+				CCCF81C61C780A4100B604C9 /* RegeocodeViewController.h */,
+				CCCF81C71C780A4100B604C9 /* RegeocodeViewController.m */,
+			);
+			path = Geocode;
+			sourceTree = "<group>";
+		};
+		CCCF818C1C77FE6500B604C9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CCCF818D1C77FE6500B604C9 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CCCF81A51C77FE6500B604C9 /* GeocodeTests */ = {
+			isa = PBXGroup;
+			children = (
+				CCCF81A61C77FE6500B604C9 /* GeocodeTests.m */,
+				CCCF81A81C77FE6500B604C9 /* Info.plist */,
+			);
+			path = GeocodeTests;
+			sourceTree = "<group>";
+		};
+		CCCF81B01C77FE6500B604C9 /* GeocodeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CCCF81B11C77FE6500B604C9 /* GeocodeUITests.m */,
+				CCCF81B31C77FE6500B604C9 /* Info.plist */,
+			);
+			path = GeocodeUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CCCF81881C77FE6500B604C9 /* Geocode */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CCCF81B61C77FE6500B604C9 /* Build configuration list for PBXNativeTarget "Geocode" */;
+			buildPhases = (
+				CCCF81851C77FE6500B604C9 /* Sources */,
+				CCCF81861C77FE6500B604C9 /* Frameworks */,
+				CCCF81871C77FE6500B604C9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Geocode;
+			productName = Geocode;
+			productReference = CCCF81891C77FE6500B604C9 /* Geocode.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CCCF81A11C77FE6500B604C9 /* GeocodeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CCCF81B91C77FE6500B604C9 /* Build configuration list for PBXNativeTarget "GeocodeTests" */;
+			buildPhases = (
+				CCCF819E1C77FE6500B604C9 /* Sources */,
+				CCCF819F1C77FE6500B604C9 /* Frameworks */,
+				CCCF81A01C77FE6500B604C9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CCCF81A41C77FE6500B604C9 /* PBXTargetDependency */,
+			);
+			name = GeocodeTests;
+			productName = GeocodeTests;
+			productReference = CCCF81A21C77FE6500B604C9 /* GeocodeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CCCF81AC1C77FE6500B604C9 /* GeocodeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CCCF81BC1C77FE6500B604C9 /* Build configuration list for PBXNativeTarget "GeocodeUITests" */;
+			buildPhases = (
+				CCCF81A91C77FE6500B604C9 /* Sources */,
+				CCCF81AA1C77FE6500B604C9 /* Frameworks */,
+				CCCF81AB1C77FE6500B604C9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CCCF81AF1C77FE6500B604C9 /* PBXTargetDependency */,
+			);
+			name = GeocodeUITests;
+			productName = GeocodeUITests;
+			productReference = CCCF81AD1C77FE6500B604C9 /* GeocodeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CCCF81811C77FE6500B604C9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = qingyun;
+				TargetAttributes = {
+					CCCF81881C77FE6500B604C9 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					CCCF81A11C77FE6500B604C9 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = CCCF81881C77FE6500B604C9;
+					};
+					CCCF81AC1C77FE6500B604C9 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = CCCF81881C77FE6500B604C9;
+					};
+				};
+			};
+			buildConfigurationList = CCCF81841C77FE6500B604C9 /* Build configuration list for PBXProject "Geocode" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CCCF81801C77FE6500B604C9;
+			productRefGroup = CCCF818A1C77FE6500B604C9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CCCF81881C77FE6500B604C9 /* Geocode */,
+				CCCF81A11C77FE6500B604C9 /* GeocodeTests */,
+				CCCF81AC1C77FE6500B604C9 /* GeocodeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CCCF81871C77FE6500B604C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCCF819C1C77FE6500B604C9 /* LaunchScreen.storyboard in Resources */,
+				CCCF81991C77FE6500B604C9 /* Assets.xcassets in Resources */,
+				CCCF81971C77FE6500B604C9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCCF81A01C77FE6500B604C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCCF81AB1C77FE6500B604C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CCCF81851C77FE6500B604C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCCF81941C77FE6500B604C9 /* ViewController.m in Sources */,
+				CCCF81911C77FE6500B604C9 /* AppDelegate.m in Sources */,
+				CCCF818E1C77FE6500B604C9 /* main.m in Sources */,
+				CCCF81C81C780A4100B604C9 /* RegeocodeViewController.m in Sources */,
+				CCCF81C11C77FF8A00B604C9 /* GeocodeViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCCF819E1C77FE6500B604C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCCF81A71C77FE6500B604C9 /* GeocodeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCCF81A91C77FE6500B604C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCCF81B21C77FE6500B604C9 /* GeocodeUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CCCF81A41C77FE6500B604C9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CCCF81881C77FE6500B604C9 /* Geocode */;
+			targetProxy = CCCF81A31C77FE6500B604C9 /* PBXContainerItemProxy */;
+		};
+		CCCF81AF1C77FE6500B604C9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CCCF81881C77FE6500B604C9 /* Geocode */;
+			targetProxy = CCCF81AE1C77FE6500B604C9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CCCF81951C77FE6500B604C9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CCCF81961C77FE6500B604C9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CCCF819A1C77FE6500B604C9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CCCF819B1C77FE6500B604C9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CCCF81B41C77FE6500B604C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CCCF81B51C77FE6500B604C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CCCF81B71C77FE6500B604C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Geocode/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hnqingyun.Geocode;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CCCF81B81C77FE6500B604C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Geocode/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hnqingyun.Geocode;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		CCCF81BA1C77FE6500B604C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = GeocodeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hnqingyun.GeocodeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Geocode.app/Geocode";
+			};
+			name = Debug;
+		};
+		CCCF81BB1C77FE6500B604C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = GeocodeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hnqingyun.GeocodeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Geocode.app/Geocode";
+			};
+			name = Release;
+		};
+		CCCF81BD1C77FE6500B604C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = GeocodeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hnqingyun.GeocodeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Geocode;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		CCCF81BE1C77FE6500B604C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = GeocodeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hnqingyun.GeocodeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Geocode;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CCCF81841C77FE6500B604C9 /* Build configuration list for PBXProject "Geocode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCCF81B41C77FE6500B604C9 /* Debug */,
+				CCCF81B51C77FE6500B604C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CCCF81B61C77FE6500B604C9 /* Build configuration list for PBXNativeTarget "Geocode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCCF81B71C77FE6500B604C9 /* Debug */,
+				CCCF81B81C77FE6500B604C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CCCF81B91C77FE6500B604C9 /* Build configuration list for PBXNativeTarget "GeocodeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCCF81BA1C77FE6500B604C9 /* Debug */,
+				CCCF81BB1C77FE6500B604C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CCCF81BC1C77FE6500B604C9 /* Build configuration list for PBXNativeTarget "GeocodeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCCF81BD1C77FE6500B604C9 /* Debug */,
+				CCCF81BE1C77FE6500B604C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CCCF81811C77FE6500B604C9 /* Project object */;
+}
